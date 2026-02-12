@@ -355,3 +355,191 @@ body {
 .delete-btn:hover {
     background: #e60000;
 }
+
+.edit-btn {
+    padding: 6px 12px;
+    background: #4caf50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 13px;
+    margin-right: 6px;
+}
+
+.edit-btn:hover {
+    background: #388e3c;
+}
+
+.preview-btn {
+    padding: 6px 12px;
+    background: #ffa726;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 13px;
+    margin-right: 6px;
+}
+
+.preview-btn:hover {
+    background: #fb8c00;
+}
+/* ============================= */
+/* Student Dashboard Thumbnail  */
+/* ============================= */
+
+/* Large image thumbnail for student side */
+.thumb-img {
+    width: 100%;              /* Full width of card */
+    height: 140px;            /* Fixed height */
+    object-fit: cover;        /* Crop image properly */
+    border-radius: 8px;       /* Rounded corners */
+    margin-bottom: 10px;      /* Space below image */
+}
+
+
+/* ============================= */
+/* Admin Small Thumbnail        */
+/* ============================= */
+
+/* Small image preview for admin panel */
+.thumb-img-small {
+    width: 60px;              /* Small width */
+    height: 60px;             /* Small height */
+    object-fit: cover;        /* Proper image fit */
+    border-radius: 6px;       /* Slight rounded corner */
+    margin-right: 10px;       /* Space between image & text */
+}
+
+
+/* ============================= */
+/* PDF Icon Styling (Student)   */
+/* ============================= */
+
+/* Large PDF icon container */
+.pdf-icon {
+    background: #e3f2fd;      /* Light blue background */
+    padding: 40px;            /* Space around icon */
+    text-align: center;       /* Center align text */
+    border-radius: 8px;       /* Rounded box */
+    font-size: 18px;          /* Icon text size */
+    margin-bottom: 10px;      /* Space below icon */
+}
+
+
+/* ============================= */
+/* PDF Icon Styling (Admin)     */
+/* ============================= */
+
+/* Small PDF icon in admin panel */
+.pdf-icon-small {
+    font-size: 22px;          /* Slightly bigger emoji */
+    margin-right: 10px;       /* Space before title */
+}
+
+
+/* ============================= */
+/* Button Group Styling         */
+/* ============================= */
+
+/* Space above preview/download buttons */
+.btn-group {
+    margin-top: 10px;
+}
+
+
+/* ============================= */
+/* Admin Manage Card Layout     */
+/* ============================= */
+
+/* Full card container for each note in admin panel */
+.manage-card-full {
+    display: flex;                /* Horizontal layout */
+    align-items: center;          /* Vertically center items */
+    justify-content: space-between; /* Space between title & buttons */
+    background: #4a4a7f;          /* Dark background */
+    padding: 12px;                /* Inner spacing */
+    margin-bottom: 10px;          /* Space between cards */
+    border-radius: 6px;           /* Rounded edges */
+}
+
+.note-meta {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.search-form {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-form input,
+.search-form select {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.search-form button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    background: #667eea;
+    color: white;
+    cursor: pointer;
+}
+/* FORCE SEARCH DESIGN */
+.search-form {
+    margin-bottom: 20px !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+}
+
+.search-form input,
+.search-form select {
+    padding: 10px !important;
+    border-radius: 6px !important;
+    border: 1px solid #ccc !important;
+}
+
+.search-form button {
+    padding: 10px 16px !important;
+    border: none !important;
+    border-radius: 6px !important;
+    background: #667eea !important;
+    color: #fff !important;
+    cursor: pointer !important;
+}
+
+/* ============================= */
+/* Admin Statistics Section      */
+/* ============================= */
+
+.stats-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.stat-card {
+    background: #3b3b6b;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.stat-card h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #ddd;
+}
+
+.stat-card p {
+    font-size: 20px;
+    font-weight: bold;
+}

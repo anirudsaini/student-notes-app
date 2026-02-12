@@ -1,29 +1,48 @@
--- Create Database
-CREATE DATABASE IF NOT EXISTS student_notes;
-USE student_notes;
+-- =========================================
+-- Coaching Resource Hub - Full Database
+-- =========================================
 
--- Users Table
+-- Create Database
+CREATE DATABASE IF NOT EXISTS coaching_resource_hub;
+USE coaching_resource_hub;
+
+-- =========================================
+-- USERS TABLE
+-- =========================================
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
-    email VARCHAR(100) NOT NULL UNIQUE,
-    password VARCHAR(255) NOT NULL
+    email VARCHAR(150) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Admin Table (Secure Login ke liye)
+-- =========================================
+-- ADMIN TABLE
+-- =========================================
 CREATE TABLE admin (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    username VARCHAR(100) NOT NULL,
-    password VARCHAR(255) NOT NULL
+    username VARCHAR(100) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Notes Table
+-- =========================================
+-- NOTES TABLE
+-- =========================================
 CREATE TABLE notes (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    title VARCHAR(200) NOT NULL,
-    file VARCHAR(255) NOT NULL
+    title VARCHAR(255) NOT NULL,
+    subject VARCHAR(100) NOT NULL,
+    file VARCHAR(255) NOT NULL,
+    file_size VARCHAR(20),
+    downloads INT DEFAULT 0,
+    upload_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Default Admin Insert (username: admin , password: admin123)
-INSERT INTO admin (username, password)
-VALUES ('admin', '$2y$10$wH6YVxkYbK4X8Z3Z8mYqUe9dWQm4kQ8ZpJt9R8lWmYpFZlZpJk2uS');
+-- =========================================
+-- DEFAULT ADMIN (Username: admin)
+-- Password must be created via register page
+-- =========================================
+-- NOTE: Do NOT insert plain password manually
+-- Use admin/register.php to create admin
