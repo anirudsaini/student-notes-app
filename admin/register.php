@@ -1,5 +1,8 @@
 <?php
 session_start();
+die("Admin self registration is disabled.");
+?>
+
 include "../config/db.php";
 ?>
 

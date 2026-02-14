@@ -1,5 +1,10 @@
 <?php
 session_start();
+
+die("Direct admin registration not allowed.");
+?>
+
+
 include "../config/db.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {

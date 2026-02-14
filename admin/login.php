@@ -25,10 +25,7 @@ if (isset($_SESSION['admin'])) {
         <button type="submit">Login</button>
     </form>
 
-    <p class="bottom-text">
-        New Admin?
-        <a href="register.php">Register here</a>
-    </p>
+   
 
     <a href="../index.php" class="back-link">Back to Student Login</a>
 </div>

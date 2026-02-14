@@ -543,3 +543,31 @@ body {
     font-size: 20px;
     font-weight: bold;
 }
+
+.profile-wrapper {
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+.profile-card {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.profile-wrapper form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.profile-wrapper button {
+    padding: 10px 16px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}

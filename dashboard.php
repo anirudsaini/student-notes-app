@@ -56,6 +56,8 @@ if (isset($_GET['search']) && !empty($_GET['search'])) {
     <div class="dashboard-header">
         <h2>Welcome, <?php echo $_SESSION['user']; ?> 👋</h2>
         <a href="logout.php" class="logout-btn">Logout</a>
+        <a href="profile.php" class="profile-btn">Profile</a>
+
     </div>
 
     <!-- Notes Section -->
